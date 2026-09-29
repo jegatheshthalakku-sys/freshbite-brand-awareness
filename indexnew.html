@@ -24,12 +24,208 @@
     <meta property="og:description"
         content="Enhancing brand awareness through SEO, Email and Social Media Integration">
 
+    <meta property="og:url"
+        content="https://jegatheshthalakku-sys.github.io/freshbite-brand-awareness/">
+
     <title>
         FreshBite | Brand Awareness Enhancement
     </title>
 
+
+    <!-- MAIN WEBSITE CSS -->
     <link rel="stylesheet"
         href="style.css">
+
+
+    <!-- =====================================
+         BREVO FORM CSS
+    ====================================== -->
+
+    <style>
+
+        @font-face {
+            font-display: block;
+            font-family: Roboto;
+            src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2)
+                format("woff2"),
+                url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff)
+                format("woff");
+        }
+
+        @font-face {
+            font-display: fallback;
+            font-family: Roboto;
+            font-weight: 600;
+            src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2)
+                format("woff2"),
+                url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff)
+                format("woff");
+        }
+
+        @font-face {
+            font-display: fallback;
+            font-family: Roboto;
+            font-weight: 700;
+            src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2)
+                format("woff2"),
+                url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff)
+                format("woff");
+        }
+
+        :where(.sib-form-message-panel) {
+            display: none;
+        }
+
+        :where(.sib-form-message-panel .sib-notification__icon) {
+            width: 20px;
+            height: 20px;
+        }
+
+        #sib-container input:-ms-input-placeholder {
+            font-family: Helvetica, sans-serif;
+            text-align: left;
+            color: #c0ccda;
+        }
+
+        #sib-container input::placeholder {
+            font-family: Helvetica, sans-serif;
+            text-align: left;
+            color: #c0ccda;
+        }
+
+        #sib-container textarea::placeholder {
+            font-family: Helvetica, sans-serif;
+            text-align: left;
+            color: #c0ccda;
+        }
+
+        #sib-container a {
+            text-decoration: underline;
+            color: #2BB2FC;
+        }
+
+
+        /* =====================================
+           FRESHBITE BREVO CUSTOM DESIGN
+        ====================================== */
+
+        .brevo-wrapper {
+            width: 100%;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .brevo-form-box {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 35px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 18px;
+        }
+
+        .brevo-form-title {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .brevo-form-description {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .brevo-form-label {
+            display: block;
+            margin-bottom: 10px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .brevo-form-input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 16px 18px;
+            border-radius: 10px;
+            border: 1px solid #c0ccd9;
+            background: #ffffff;
+            color: #1d2939;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .brevo-form-input:focus {
+            border-color: #9be33c;
+            box-shadow: 0 0 0 3px rgba(155, 227, 60, 0.15);
+        }
+
+        .brevo-form-help {
+            display: block;
+            margin-top: 8px;
+            margin-bottom: 18px;
+            font-size: 12px;
+            color: #8390A4;
+        }
+
+        .brevo-submit {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 28px;
+            border: none;
+            border-radius: 10px;
+            background: #3E4857;
+            color: #ffffff;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .brevo-submit:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .brevo-error {
+            display: none;
+            margin-bottom: 20px;
+            padding: 14px 16px;
+            border-radius: 8px;
+            background: #ffeded;
+            border: 1px solid #ff4949;
+            color: #661d1d;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .brevo-success {
+            display: none;
+            margin-bottom: 20px;
+            padding: 14px 16px;
+            border-radius: 8px;
+            background: #e7faf0;
+            border: 1px solid #13ce66;
+            color: #085229;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .input--hidden {
+            display: none !important;
+        }
+
+    </style>
+
+
+    <!-- BREVO REQUIRED CSS -->
+    <link rel="stylesheet"
+        href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 
 </head>
 
@@ -43,6 +239,7 @@
 
 <div class="cursor"></div>
 <div class="cursor-dot"></div>
+
 
 
 <!-- =====================================
@@ -107,7 +304,6 @@
 
     <div class="hero-grid"></div>
 
-
     <div class="floating-circle circle-one"></div>
     <div class="floating-circle circle-two"></div>
 
@@ -170,11 +366,19 @@
 
             </a>
 
+            <a href="https://jegatheshthalakku-sys.github.io/freshbite-brand-awareness/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline">
+
+                Visit Website ↗
+
+            </a>
+
         </div>
 
 
         <div class="hero-stats">
-
 
             <div class="stat">
 
@@ -226,7 +430,6 @@
 
             </div>
 
-
         </div>
 
     </div>
@@ -236,7 +439,6 @@
     <!-- HERO VISUAL -->
 
     <div class="hero-visual reveal">
-
 
         <div class="orbit orbit-one"></div>
 
@@ -302,7 +504,6 @@
             </small>
 
         </div>
-
 
     </div>
 
@@ -1021,46 +1222,142 @@
 
 
 <!-- =====================================
-     NEWSLETTER FORM
+     NEWSLETTER - BREVO
 ===================================== -->
 
 <section class="newsletter-section">
 
     <div class="newsletter-box reveal">
 
+        <div class="brevo-wrapper">
 
-        <div>
+            <div class="brevo-form-box">
 
-            <p class="eyebrow">
-                JOIN THE COMMUNITY
-            </p>
 
-            <h2>
-                Get FreshBite
-                <span>
-                    updates.
-                </span>
-            </h2>
+                <p class="eyebrow">
+                    JOIN THE COMMUNITY
+                </p>
 
-            <p>
-                Subscribe to our newsletter.
-            </p>
+
+                <div class="brevo-form-title">
+
+                    Get FreshBite
+                    <span>
+                        updates.
+                    </span>
+
+                </div>
+
+
+                <p class="brevo-form-description">
+
+                    Subscribe to our newsletter and
+                    stay updated.
+
+                </p>
+
+
+                <!-- =====================================
+                     BREVO FORM CONTAINER
+                ====================================== -->
+
+                <div
+                    id="sib-form-container">
+
+
+                    <!-- ERROR -->
+
+                    <div
+                        id="error-message"
+                        class="brevo-error">
+
+                        Your subscription could not be saved.
+                        Please try again.
+
+                    </div>
+
+
+                    <!-- SUCCESS -->
+
+                    <div
+                        id="success-message"
+                        class="brevo-success">
+
+                        Your subscription has been successful.
+
+                    </div>
+
+
+                    <!-- =====================================
+                         BREVO FORM
+                    ====================================== -->
+
+                    <form
+                        id="sib-form"
+                        method="POST"
+                        action="https://72d7b1d1.sibforms.com/serve/MUIFAIv4dULTv7nT2g4jwytQLGWzC7R4spplM4w8_DzaUbziRFvY_dDWasO936Xg1OXTYAusSdXAqw9jtFwXLhkzJlrQmhlb48t0veZAOnvQKZ9xKZ5UEcPX_fmSS0mQPiY4f-7ss9mDJ7_TrANo4kVbCX1F3NVhAMlFKnmYtgp7ewQ3zfp8kW607PrAF9lpS8T4J4AQA7SW6kreBw=="
+                        data-type="subscription">
+
+
+                        <label
+                            class="brevo-form-label"
+                            for="EMAIL">
+
+                            Enter your email address
+
+                        </label>
+
+
+                        <input
+                            class="brevo-form-input"
+                            type="email"
+                            id="EMAIL"
+                            name="EMAIL"
+                            autocomplete="email"
+                            placeholder="yourname@gmail.com"
+                            required>
+
+
+                        <small class="brevo-form-help">
+
+                            Example: yourname@gmail.com
+
+                        </small>
+
+
+                        <button
+                            class="brevo-submit"
+                            type="submit">
+
+                            SUBSCRIBE →
+
+                        </button>
+
+
+                        <!-- REQUIRED BREVO HIDDEN FIELD -->
+
+                        <input
+                            type="text"
+                            name="email_address_check"
+                            value=""
+                            class="input--hidden">
+
+
+                        <!-- BREVO LANGUAGE -->
+
+                        <input
+                            type="hidden"
+                            name="locale"
+                            value="en">
+
+
+                    </form>
+
+                </div>
+
+            </div>
 
         </div>
-
-
-        <form id="newsletterForm">
-
-            <input
-                type="email"
-                placeholder="Enter your email"
-                required>
-
-            <button type="submit">
-                Subscribe →
-            </button>
-
-        </form>
 
     </div>
 
@@ -1384,8 +1681,7 @@
         <textarea
             placeholder="Your Message"
             rows="5"
-            required>
-        </textarea>
+            required></textarea>
 
 
         <button
@@ -1426,16 +1722,22 @@
 
     <div class="footer-social">
 
-        <a href="#">
-            Instagram
+        <a href="https://jegatheshthalakku-sys.github.io/freshbite-brand-awareness/"
+            target="_blank"
+            rel="noopener noreferrer">
+            🌐 Website
         </a>
 
-        <a href="#">
-            Facebook
+        <a href="#social">
+            📸 Instagram
         </a>
 
-        <a href="#">
-            LinkedIn
+        <a href="#social">
+            📘 Facebook
+        </a>
+
+        <a href="#social">
+            💼 LinkedIn
         </a>
 
     </div>
@@ -1451,7 +1753,90 @@
 
 
 
+<!-- =====================================
+     MAIN WEBSITE JAVASCRIPT
+===================================== -->
+
 <script src="script.js"></script>
+
+
+
+<!-- =====================================
+     BREVO JAVASCRIPT CONFIGURATION
+===================================== -->
+
+<script>
+
+    window.REQUIRED_CODE_ERROR_MESSAGE =
+        'Please choose a country code';
+
+    window.LOCALE = 'en';
+
+
+    window.EMAIL_INVALID_MESSAGE =
+        'The information provided is invalid. Please enter a valid email address.';
+
+
+    window.SMS_INVALID_MESSAGE =
+        'The information provided is invalid. Please review the field format and try again.';
+
+
+    window.REQUIRED_ERROR_MESSAGE =
+        'This field cannot be left blank.';
+
+
+    window.GENERIC_INVALID_MESSAGE =
+        'The information provided is invalid. Please review the field format and try again.';
+
+
+    window.INVALID_NUMBER =
+        'The information provided is invalid. Please review the field format and try again.';
+
+
+    window.INVALID_DATE =
+        'Please enter a valid date';
+
+
+    window.REQUIRED_MULTISELECT_MESSAGE =
+        'Please select at least 1 option';
+
+
+    window.translation = {
+
+        common: {
+
+            selectedList:
+                '{quantity} list selected',
+
+            selectedLists:
+                '{quantity} lists selected',
+
+            selectedOption:
+                '{quantity} selected',
+
+            selectedOptions:
+                '{quantity} selected'
+
+        }
+
+    };
+
+
+    var AUTOHIDE = Boolean(0);
+
+</script>
+
+
+
+<!-- =====================================
+     BREVO MAIN SCRIPT
+===================================== -->
+
+<script
+    defer
+    src="https://sibforms.com/forms/end-form/build/main.js">
+</script>
+
 
 </body>
 

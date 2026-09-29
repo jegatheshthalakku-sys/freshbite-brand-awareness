@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="FreshBite is a healthy snack brand using SEO, email marketing and social media integration to enhance brand awareness.">
+
+    <meta name="keywords"
+        content="FreshBite, healthy snacks, brand awareness, SEO, email marketing, social media marketing">
+
+    <meta name="author"
+        content="FreshBite Digital Marketing Team">
+
+    <meta property="og:title"
+        content="FreshBite - Brand Awareness">
+
+    <meta property="og:description"
+        content="Enhancing brand awareness through SEO, Email and Social Media Integration">
+
+    <title>
+        FreshBite | Brand Awareness Enhancement
+    </title>
+
+
+    <!-- MAIN WEBSITE CSS -->
+    <link rel="stylesheet"
+        href="style.css">
+
+
+    <!-- =====================================
+         BREVO FORM CSS
+    ====================================== -->
+
+    <style>
+
+        @font-face {
+            font-display: block;
+            font-family: Roboto;
+            src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2)
+                format("woff2"),
+                url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff)
+                format("woff");
+        }
+
+        @font-face {
+            font-display: fallback;
+            font-family: Roboto;
+            font-weight: 600;
+            src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2)
+                format("woff2"),
+                url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff)
+                format("woff");
+        }
+
+        @font-face {
+            font-display: fallback;
+            font-family: Roboto;
+            font-weight: 700;
+            src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2)
+                format("woff2"),
+                url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff)
+                format("woff");
+        }
+
+        :where(.sib-form-message-panel) {
+            display: none;
+        }
+
+        :where(.sib-form-message-panel .sib-notification__icon) {
+            width: 20px;
+            height: 20px;
+        }
+
+        #sib-container input:-ms-input-placeholder {
+            font-family: Helvetica, sans-serif;
+            text-align: left;
+            color: #c0ccda;
+        }
+
+        #sib-container input::placeholder {
+            font-family: Helvetica, sans-serif;
+            text-align: left;
+            color: #c0ccda;
+        }
+
+        #sib-container textarea::placeholder {
+            font-family: Helvetica, sans-serif;
+            text-align: left;
+            color: #c0ccda;
+        }
+
+        #sib-container a {
+            text-decoration: underline;
+            color: #2BB2FC;
+        }
+
+
+        /* =====================================
+           FRESHBITE BREVO CUSTOM DESIGN
+        ====================================== */
+
+        .brevo-wrapper {
+            width: 100%;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .brevo-form-box {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 35px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 18px;
+        }
+
+        .brevo-form-title {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .brevo-form-description {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .brevo-form-label {
+            display: block;
+            margin-bottom: 10px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .brevo-form-input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 16px 18px;
+            border-radius: 10px;
+            border: 1px solid #c0ccd9;
+            background: #ffffff;
+            color: #1d2939;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .brevo-form-input:focus {
+            border-color: #9be33c;
+            box-shadow: 0 0 0 3px rgba(155, 227, 60, 0.15);
+        }
+
+        .brevo-form-help {
+            display: block;
+            margin-top: 8px;
+            margin-bottom: 18px;
+            font-size: 12px;
+            color: #8390A4;
+        }
+
+        .brevo-submit {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 28px;
+            border: none;
+            border-radius: 10px;
+            background: #3E4857;
+            color: #ffffff;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .brevo-submit:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .brevo-error {
+            display: none;
+            margin-bottom: 20px;
+            padding: 14px 16px;
+            border-radius: 8px;
+            background: #ffeded;
+            border: 1px solid #ff4949;
+            color: #661d1d;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .brevo-success {
+            display: none;
+            margin-bottom: 20px;
+            padding: 14px 16px;
+            border-radius: 8px;
+            background: #e7faf0;
+            border: 1px solid #13ce66;
+            color: #085229;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .input--hidden {
+            display: none !important;
+        }
+
+    </style>
+
+
+    <!-- BREVO REQUIRED CSS -->
+    <link rel="stylesheet"
+        href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================
+     CURSOR
+===================================== -->
+
+<div class="cursor"></div>
+<div class="cursor-dot"></div>
+
+
+
+<!-- =====================================
+     LOADER
+===================================== -->
+
+<div class="loader">
+
+    <div class="loader-logo">
+        Fresh<span>Bite</span>
+    </div>
+
+    <div class="loader-line"></div>
+
+    <p>
+        Building Brand Awareness...
+    </p>
+
+</div>
+
+
+
+<!-- =====================================
+     NAVBAR
+===================================== -->
+
+<header class="navbar">
+
+    <a href="#home" class="logo">
+        Fresh<span>Bite</span>
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="#home">Home</a>
+
+        <a href="#seo">SEO</a>
+
+        <a href="#social">Social Media</a>
+
+        <a href="#email">Email</a>
+
+        <a href="#analytics">Analytics</a>
+
+    </nav>
+
+
+    <button class="menu-btn">
+        ☰
+    </button>
+
+</header>
+
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+<section class="hero" id="home">
+
+    <div class="hero-grid"></div>
+
+    <div class="floating-circle circle-one"></div>
+    <div class="floating-circle circle-two"></div>
+
+
+    <div class="hero-content reveal">
+
+        <div class="hero-badge">
+
+            <span></span>
+
+            DIGITAL BRAND AWARENESS PROJECT
+
+        </div>
+
+
+        <h1>
+
+            Make Your Brand
+
+            <span>
+                Impossible
+            </span>
+
+            To Ignore.
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            A digital marketing strategy that combines
+
+            <strong>SEO</strong>,
+
+            <strong>Social Media</strong>
+
+            and
+
+            <strong>Email Marketing</strong>
+
+            to create stronger brand awareness.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a href="#strategy"
+                class="btn btn-primary">
+
+                Explore Strategy →
+
+            </a>
+
+
+            <a href="#analytics"
+                class="btn btn-outline">
+
+                View Results
+
+            </a>
+
+        </div>
+
+
+        <div class="hero-stats">
+
+            <div class="stat">
+
+                <strong
+                    class="counter"
+                    data-target="87">
+
+                    0
+
+                </strong>
+
+                <span>
+                    % Reach
+                </span>
+
+            </div>
+
+
+            <div class="stat">
+
+                <strong
+                    class="counter"
+                    data-target="64">
+
+                    0
+
+                </strong>
+
+                <span>
+                    % Engagement
+                </span>
+
+            </div>
+
+
+            <div class="stat">
+
+                <strong
+                    class="counter"
+                    data-target="42">
+
+                    0
+
+                </strong>
+
+                <span>
+                    % Conversion
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- HERO VISUAL -->
+
+    <div class="hero-visual reveal">
+
+        <div class="orbit orbit-one"></div>
+
+        <div class="orbit orbit-two"></div>
+
+
+        <div class="brand-core">
+
+            <div class="brand-icon">
+                🍃
+            </div>
+
+            <h3>
+                FreshBite
+            </h3>
+
+            <p>
+                Fresh Ideas
+            </p>
+
+        </div>
+
+
+        <div class="orbit-item item-seo">
+
+            🔍
+
+            <small>
+                SEO
+            </small>
+
+        </div>
+
+
+        <div class="orbit-item item-social">
+
+            📱
+
+            <small>
+                SOCIAL
+            </small>
+
+        </div>
+
+
+        <div class="orbit-item item-email">
+
+            ✉️
+
+            <small>
+                EMAIL
+            </small>
+
+        </div>
+
+
+        <div class="orbit-item item-data">
+
+            📊
+
+            <small>
+                DATA
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     MOVING TEXT
+===================================== -->
+
+<div class="marquee">
+
+    <div class="marquee-track">
+
+        <span>
+            SEO
+        </span>
+
+        <b>✦</b>
+
+        <span>
+            SOCIAL MEDIA
+        </span>
+
+        <b>✦</b>
+
+        <span>
+            EMAIL MARKETING
+        </span>
+
+        <b>✦</b>
+
+        <span>
+            BRAND AWARENESS
+        </span>
+
+        <b>✦</b>
+
+        <span>
+            SEO
+        </span>
+
+        <b>✦</b>
+
+        <span>
+            SOCIAL MEDIA
+        </span>
+
+        <b>✦</b>
+
+        <span>
+            EMAIL MARKETING
+        </span>
+
+        <b>✦</b>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================
+     INTRO
+===================================== -->
+
+<section class="section intro">
+
+    <div class="section-title reveal">
+
+        <p class="eyebrow">
+            THE IDEA
+        </p>
+
+        <h2>
+
+            One brand.
+
+            <span>
+                Three digital channels.
+            </span>
+
+            One powerful identity.
+
+        </h2>
+
+    </div>
+
+
+    <div class="intro-text reveal">
+
+        <p>
+
+            FreshBite uses an integrated digital marketing
+            approach to increase visibility, connect with
+            customers and build long-term brand awareness.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     STRATEGY
+===================================== -->
+
+<section class="section strategy"
+    id="strategy">
+
+
+    <div class="section-title reveal">
+
+        <p class="eyebrow">
+            DIGITAL STRATEGY
+        </p>
+
+        <h2>
+
+            Three channels.
+
+            <span>
+                One destination.
+            </span>
+
+        </h2>
+
+    </div>
+
+
+
+    <div class="strategy-grid">
+
+
+        <!-- SEO -->
+
+        <article
+            class="strategy-card seo-card reveal"
+            id="seo">
+
+            <div class="card-number">
+                01
+            </div>
+
+            <div class="card-icon">
+                🔍
+            </div>
+
+            <h3>
+                SEO Integration
+            </h3>
+
+            <p>
+
+                Improve search visibility and help
+                potential customers discover FreshBite
+                through search engines.
+
+            </p>
+
+
+            <div class="features">
+
+                <span>
+                    ✓ Meta Description
+                </span>
+
+                <span>
+                    ✓ Keywords
+                </span>
+
+                <span>
+                    ✓ Search Content
+                </span>
+
+                <span>
+                    ✓ Organic Traffic
+                </span>
+
+            </div>
+
+
+            <div class="card-footer">
+
+                <span>
+                    SEARCH VISIBILITY
+                </span>
+
+                <strong>
+                    +87%
+                </strong>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- SOCIAL -->
+
+        <article
+            class="strategy-card social-card reveal"
+            id="social">
+
+            <div class="card-number">
+                02
+            </div>
+
+            <div class="card-icon">
+                📱
+            </div>
+
+            <h3>
+                Social Media
+            </h3>
+
+            <p>
+
+                Build an active online community using
+                engaging content, campaigns and
+                social interaction.
+
+            </p>
+
+
+            <div class="features">
+
+                <span>
+                    ✓ Instagram
+                </span>
+
+                <span>
+                    ✓ Facebook
+                </span>
+
+                <span>
+                    ✓ LinkedIn
+                </span>
+
+                <span>
+                    ✓ Engagement
+                </span>
+
+            </div>
+
+
+            <div class="card-footer">
+
+                <span>
+                    SOCIAL REACH
+                </span>
+
+                <strong>
+                    +64%
+                </strong>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- EMAIL -->
+
+        <article
+            class="strategy-card email-card reveal"
+            id="email">
+
+            <div class="card-number">
+                03
+            </div>
+
+            <div class="card-icon">
+                ✉️
+            </div>
+
+            <h3>
+                Email Marketing
+            </h3>
+
+            <p>
+
+                Connect directly with customers through
+                newsletters, personalized messages and
+                promotional campaigns.
+
+            </p>
+
+
+            <div class="features">
+
+                <span>
+                    ✓ Newsletter
+                </span>
+
+                <span>
+                    ✓ Email Collection
+                </span>
+
+                <span>
+                    ✓ Campaigns
+                </span>
+
+                <span>
+                    ✓ Customer Retention
+                </span>
+
+            </div>
+
+
+            <div class="card-footer">
+
+                <span>
+                    EMAIL RESPONSE
+                </span>
+
+                <strong>
+                    +42%
+                </strong>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     SEO SECTION
+===================================== -->
+
+<section class="section seo-section">
+
+
+    <div class="split-layout">
+
+
+        <div class="visual-panel reveal">
+
+            <div class="search-window">
+
+                <div class="search-top">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+
+                <div class="search-bar">
+
+                    🔍
+
+                    healthy snacks FreshBite
+
+                </div>
+
+
+                <div class="search-result">
+
+                    <small>
+                        FRESHBITE.COM
+                    </small>
+
+                    <h4>
+                        FreshBite - Healthy
+                        Snacks for Everyone
+                    </h4>
+
+                    <p>
+
+                        Discover delicious,
+                        nutritious and fresh snacks...
+
+                    </p>
+
+                </div>
+
+
+                <div class="search-result second">
+
+                    <small>
+                        FRESHBITE.COM
+                    </small>
+
+                    <h4>
+                        Why Choose FreshBite?
+                    </h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="content-panel reveal">
+
+            <p class="eyebrow">
+                SEO VISIBILITY
+            </p>
+
+            <h2>
+
+                Be found
+
+                <span>
+                    before they know you.
+                </span>
+
+            </h2>
+
+            <p>
+
+                Search Engine Optimization helps
+                FreshBite appear when customers
+                search for healthy snack products.
+
+            </p>
+
+
+            <div class="seo-points">
+
+                <div>
+
+                    <strong>
+                        01
+                    </strong>
+
+                    <span>
+                        Keyword Optimization
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        02
+                    </strong>
+
+                    <span>
+                        Search-friendly Content
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        03
+                    </strong>
+
+                    <span>
+                        Meta Information
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     SOCIAL MEDIA
+===================================== -->
+
+<section class="section social-section">
+
+
+    <div class="section-title reveal">
+
+        <p class="eyebrow">
+            SOCIAL PRESENCE
+        </p>
+
+        <h2>
+
+            Turn followers
+
+            <span>
+                into a community.
+            </span>
+
+        </h2>
+
+    </div>
+
+
+    <div class="social-grid">
+
+
+        <div class="social-box instagram reveal">
+
+            <div class="social-logo">
+                ◎
+            </div>
+
+            <h3>
+                Instagram
+            </h3>
+
+            <p>
+                Reels • Stories • Product Posts
+            </p>
+
+            <strong>
+                24.8K
+            </strong>
+
+            <span>
+                Followers
+            </span>
+
+        </div>
+
+
+
+        <div class="social-box facebook reveal">
+
+            <div class="social-logo">
+                f
+            </div>
+
+            <h3>
+                Facebook
+            </h3>
+
+            <p>
+                Community • Campaigns • Offers
+            </p>
+
+            <strong>
+                18.2K
+            </strong>
+
+            <span>
+                Followers
+            </span>
+
+        </div>
+
+
+
+        <div class="social-box linkedin reveal">
+
+            <div class="social-logo">
+                in
+            </div>
+
+            <h3>
+                LinkedIn
+            </h3>
+
+            <p>
+                Brand • Business • Professional
+            </p>
+
+            <strong>
+                8.6K
+            </strong>
+
+            <span>
+                Connections
+            </span>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     EMAIL MARKETING
+===================================== -->
+
+<section class="section email-section">
+
+
+    <div class="email-layout">
+
+
+        <div class="content-panel reveal">
+
+            <p class="eyebrow">
+                EMAIL MARKETING
+            </p>
+
+            <h2>
+
+                Stay connected.
+
+                <span>
+                    Stay remembered.
+                </span>
+
+            </h2>
+
+            <p>
+
+                Email campaigns help FreshBite maintain
+                relationships with existing customers
+                and bring them back.
+
+            </p>
+
+
+            <div class="email-benefits">
+
+                <div>
+                    📩
+                    <span>
+                        Newsletter
+                    </span>
+                </div>
+
+                <div>
+                    🎁
+                    <span>
+                        Special Offers
+                    </span>
+                </div>
+
+                <div>
+                    ❤️
+                    <span>
+                        Customer Retention
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="email-card reveal">
+
+
+            <div class="email-header">
+
+                <span>
+                    ✉
+                </span>
+
+                <p>
+                    FreshBite Newsletter
+                </p>
+
+            </div>
+
+
+            <div class="email-body">
+
+                <small>
+                    NEW FROM FRESHBITE
+                </small>
+
+                <h3>
+                    Your healthy
+                    week starts here.
+                </h3>
+
+                <p>
+
+                    Discover new products,
+                    healthy tips and exclusive
+                    offers.
+
+                </p>
+
+
+                <button>
+                    Discover More →
+                </button>
+
+            </div>
+
+
+            <div class="email-footer">
+
+                Sent to:
+
+                <strong>
+                    10,000+ subscribers
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     NEWSLETTER - BREVO
+===================================== -->
+
+<section class="newsletter-section">
+
+    <div class="newsletter-box reveal">
+
+        <div class="brevo-wrapper">
+
+            <div class="brevo-form-box">
+
+
+                <p class="eyebrow">
+                    JOIN THE COMMUNITY
+                </p>
+
+
+                <div class="brevo-form-title">
+
+                    Get FreshBite
+                    <span>
+                        updates.
+                    </span>
+
+                </div>
+
+
+                <p class="brevo-form-description">
+
+                    Subscribe to our newsletter and
+                    stay updated.
+
+                </p>
+
+
+                <!-- =====================================
+                     BREVO FORM CONTAINER
+                ====================================== -->
+
+                <div
+                    id="sib-form-container">
+
+
+                    <!-- ERROR -->
+
+                    <div
+                        id="error-message"
+                        class="brevo-error">
+
+                        Your subscription could not be saved.
+                        Please try again.
+
+                    </div>
+
+
+                    <!-- SUCCESS -->
+
+                    <div
+                        id="success-message"
+                        class="brevo-success">
+
+                        Your subscription has been successful.
+
+                    </div>
+
+
+                    <!-- =====================================
+                         BREVO FORM
+                    ====================================== -->
+
+                    <form
+                        id="sib-form"
+                        method="POST"
+                        action="https://72d7b1d1.sibforms.com/serve/MUIFAIv4dULTv7nT2g4jwytQLGWzC7R4spplM4w8_DzaUbziRFvY_dDWasO936Xg1OXTYAusSdXAqw9jtFwXLhkzJlrQmhlb48t0veZAOnvQKZ9xKZ5UEcPX_fmSS0mQPiY4f-7ss9mDJ7_TrANo4kVbCX1F3NVhAMlFKnmYtgp7ewQ3zfp8kW607PrAF9lpS8T4J4AQA7SW6kreBw=="
+                        data-type="subscription">
+
+
+                        <label
+                            class="brevo-form-label"
+                            for="EMAIL">
+
+                            Enter your email address
+
+                        </label>
+
+
+                        <input
+                            class="brevo-form-input"
+                            type="email"
+                            id="EMAIL"
+                            name="EMAIL"
+                            autocomplete="email"
+                            placeholder="yourname@gmail.com"
+                            required>
+
+
+                        <small class="brevo-form-help">
+
+                            Example: yourname@gmail.com
+
+                        </small>
+
+
+                        <button
+                            class="brevo-submit"
+                            type="submit">
+
+                            SUBSCRIBE →
+
+                        </button>
+
+
+                        <!-- REQUIRED BREVO HIDDEN FIELD -->
+
+                        <input
+                            type="text"
+                            name="email_address_check"
+                            value=""
+                            class="input--hidden">
+
+
+                        <!-- BREVO LANGUAGE -->
+
+                        <input
+                            type="hidden"
+                            name="locale"
+                            value="en">
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     CUSTOMER JOURNEY
+===================================== -->
+
+<section class="section journey">
+
+
+    <div class="section-title reveal">
+
+        <p class="eyebrow">
+            CUSTOMER JOURNEY
+        </p>
+
+        <h2>
+
+            From
+
+            <span>
+                discovery
+            </span>
+
+            to loyalty.
+
+        </h2>
+
+    </div>
+
+
+    <div class="journey-flow">
+
+
+        <div class="journey-step reveal">
+
+            <div>
+                01
+            </div>
+
+            <span>
+                DISCOVER
+            </span>
+
+            <p>
+                Customer finds FreshBite
+                through SEO.
+            </p>
+
+        </div>
+
+
+        <div class="journey-line"></div>
+
+
+        <div class="journey-step reveal">
+
+            <div>
+                02
+            </div>
+
+            <span>
+                ENGAGE
+            </span>
+
+            <p>
+                Customer interacts with
+                social content.
+            </p>
+
+        </div>
+
+
+        <div class="journey-line"></div>
+
+
+        <div class="journey-step reveal">
+
+            <div>
+                03
+            </div>
+
+            <span>
+                CONNECT
+            </span>
+
+            <p>
+                Customer joins the
+                email community.
+            </p>
+
+        </div>
+
+
+        <div class="journey-line"></div>
+
+
+        <div class="journey-step reveal">
+
+            <div>
+                04
+            </div>
+
+            <span>
+                REMEMBER
+            </span>
+
+            <p>
+                Customer remembers
+                the FreshBite brand.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     ANALYTICS
+===================================== -->
+
+<section
+    class="section analytics"
+    id="analytics">
+
+
+    <div class="section-title reveal">
+
+        <p class="eyebrow">
+            BRAND AWARENESS ANALYTICS
+        </p>
+
+        <h2>
+
+            Measure what
+
+            <span>
+                people remember.
+            </span>
+
+        </h2>
+
+    </div>
+
+
+    <div class="analytics-grid">
+
+
+        <div class="metric reveal">
+
+            <div class="metric-top">
+
+                <span>
+                    BRAND REACH
+                </span>
+
+                <strong>
+                    87%
+                </strong>
+
+            </div>
+
+            <div class="progress">
+
+                <div
+                    class="progress-bar"
+                    style="--width:87%">
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="metric reveal">
+
+            <div class="metric-top">
+
+                <span>
+                    SOCIAL ENGAGEMENT
+                </span>
+
+                <strong>
+                    64%
+                </strong>
+
+            </div>
+
+            <div class="progress">
+
+                <div
+                    class="progress-bar"
+                    style="--width:64%">
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="metric reveal">
+
+            <div class="metric-top">
+
+                <span>
+                    EMAIL RESPONSE
+                </span>
+
+                <strong>
+                    42%
+                </strong>
+
+            </div>
+
+            <div class="progress">
+
+                <div
+                    class="progress-bar"
+                    style="--width:42%">
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="metric reveal">
+
+            <div class="metric-top">
+
+                <span>
+                    BRAND ENGAGEMENT
+                </span>
+
+                <strong>
+                    76%
+                </strong>
+
+            </div>
+
+            <div class="progress">
+
+                <div
+                    class="progress-bar"
+                    style="--width:76%">
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     CONTACT
+===================================== -->
+
+<section class="section contact">
+
+
+    <div class="contact-content reveal">
+
+        <p class="eyebrow">
+            BUILD THE BRAND
+        </p>
+
+        <h2>
+
+            Fresh ideas.
+
+            <span>
+                Stronger awareness.
+            </span>
+
+        </h2>
+
+        <p>
+
+            SEO brings discovery.
+            Social media creates engagement.
+            Email builds relationships.
+
+        </p>
+
+    </div>
+
+
+    <form
+        class="contact-form reveal"
+        id="contactForm">
+
+
+        <input
+            type="text"
+            placeholder="Your Name"
+            required>
+
+
+        <input
+            type="email"
+            placeholder="Your Email"
+            required>
+
+
+        <textarea
+            placeholder="Your Message"
+            rows="5"
+            required></textarea>
+
+
+        <button
+            type="submit"
+            class="btn btn-primary">
+
+            Send Message →
+
+        </button>
+
+    </form>
+
+</section>
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer>
+
+
+    <div class="footer-brand">
+
+        Fresh<span>Bite</span>
+
+    </div>
+
+
+    <p>
+
+        Brand Awareness Enhancement Through
+        SEO, Email & Social Media Integration
+
+    </p>
+
+
+    <div class="footer-social">
+
+        <a href="#">
+            Instagram
+        </a>
+
+        <a href="#">
+            Facebook
+        </a>
+
+        <a href="#">
+            LinkedIn
+        </a>
+
+    </div>
+
+
+    <small>
+
+        © 2026 FreshBite Digital Marketing Project
+
+    </small>
+
+</footer>
+
+
+
+<!-- =====================================
+     MAIN WEBSITE JAVASCRIPT
+===================================== -->
+
+<script src="script.js"></script>
+
+
+
+<!-- =====================================
+     BREVO JAVASCRIPT CONFIGURATION
+===================================== -->
+
+<script>
+
+    window.REQUIRED_CODE_ERROR_MESSAGE =
+        'Please choose a country code';
+
+    window.LOCALE = 'en';
+
+
+    window.EMAIL_INVALID_MESSAGE =
+        'The information provided is invalid. Please enter a valid email address.';
+
+
+    window.SMS_INVALID_MESSAGE =
+        'The information provided is invalid. Please review the field format and try again.';
+
+
+    window.REQUIRED_ERROR_MESSAGE =
+        'This field cannot be left blank.';
+
+
+    window.GENERIC_INVALID_MESSAGE =
+        'The information provided is invalid. Please review the field format and try again.';
+
+
+    window.INVALID_NUMBER =
+        'The information provided is invalid. Please review the field format and try again.';
+
+
+    window.INVALID_DATE =
+        'Please enter a valid date';
+
+
+    window.REQUIRED_MULTISELECT_MESSAGE =
+        'Please select at least 1 option';
+
+
+    window.translation = {
+
+        common: {
+
+            selectedList:
+                '{quantity} list selected',
+
+            selectedLists:
+                '{quantity} lists selected',
+
+            selectedOption:
+                '{quantity} selected',
+
+            selectedOptions:
+                '{quantity} selected'
+
+        }
+
+    };
+
+
+    var AUTOHIDE = Boolean(0);
+
+</script>
+
+
+
+<!-- =====================================
+     BREVO MAIN SCRIPT
+===================================== -->
+
+<script
+    defer
+    src="https://sibforms.com/forms/end-form/build/main.js">
+</script>
+
+
+</body>
+
+</html>
