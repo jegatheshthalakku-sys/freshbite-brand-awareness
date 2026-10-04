@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jegatheshthalakku-sys.github.io/freshbite-brand-awareness/sitemap.xml
